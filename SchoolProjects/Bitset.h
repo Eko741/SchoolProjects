@@ -2,7 +2,7 @@
 #include <bitset>
 class DieStorage {
 private:
-	std::bitset<100008> dieArray; // 33336 die results big
+	std::bitset<8000016> dieArray; // 2666672 die results big
 	int size;
 public:
 	DieStorage();

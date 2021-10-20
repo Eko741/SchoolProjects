@@ -1,0 +1,5 @@
+Förnamn,Efternamn,Födelseår,Kurser,T
+Hans,Johansson,1992,3,T
+Maria,Svensson,1997,5,T
+Lina,Hansson,1989,2,T
+Jesper,Pettersson,1992,4,T

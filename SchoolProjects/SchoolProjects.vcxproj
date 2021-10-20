@@ -141,9 +141,14 @@
   <ItemGroup>
     <ClCompile Include="SchoolProjects.cpp" />
     <ClCompile Include="Bitset.cpp" />
+    <ClCompile Include="FileExplorer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitset.h" />
+    <ClInclude Include="FileExplorer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

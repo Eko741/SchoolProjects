@@ -4,7 +4,7 @@
 
 int DieStorage::getDieResult(int pos)
 {
-	if (pos > dieArray.size() / 3 || pos < 0) {
+	if (pos > size || pos < 0) {
 		std::cout << "getDieResult: Target not in bounds" << "\n";
 		return 0;
 	}
@@ -21,7 +21,7 @@ DieStorage::~DieStorage()
 
 void DieStorage::setDieResult(int pos, int result)
 {
-	if (pos > dieArray.size() / 3 || pos < 0) {
+	if (pos > size || pos < 0) {
 		std::cout << "setDieResult: Target not in bounds" << "\n";
 		return;
 	}

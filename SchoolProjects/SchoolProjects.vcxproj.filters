@@ -21,10 +21,21 @@
     <ClCompile Include="Bitset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileExplorer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FileExplorer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

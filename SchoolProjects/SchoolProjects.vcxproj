@@ -139,13 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Point2D.cpp" />
+    <ClCompile Include="Point3D.cpp" />
     <ClCompile Include="SchoolProjects.cpp" />
     <ClCompile Include="Bitset.cpp" />
-    <ClCompile Include="FileExplorer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitset.h" />
-    <ClInclude Include="FileExplorer.h" />
+    <ClInclude Include="Point2D.h" />
+    <ClInclude Include="Point3D.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data.txt" />

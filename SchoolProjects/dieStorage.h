@@ -2,13 +2,14 @@
 #include <bitset>
 class DieStorage {
 	public:
-	DieStorage();
+	DieStorage(int size);
 	~DieStorage();
 	int getDieResult(int pos);
 	void setDieResult(int pos, int result);
 	int getSize();
+	int getListSize(){ return sizeof(dieList); }
 private:
-	std::bitset<3*2700000> dieArray; // 2700000 die results big
 	int size;
+	char* dieList;
 
 };

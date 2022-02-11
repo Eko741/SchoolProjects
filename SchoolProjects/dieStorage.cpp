@@ -1,5 +1,6 @@
-#include "Bitset.h"
+#include "dieStorage.h"
 #include <iostream>
+#include <math.h>
 	
 
 int DieStorage::getDieResult(int pos)
@@ -8,10 +9,11 @@ int DieStorage::getDieResult(int pos)
 		std::cout << "getDieResult: Target not in bounds" << "\n";
 		return 0;
 	}
-	return dieArray[pos * 3] * 4 + dieArray[pos * 3 + 1] * 2 + dieArray[pos * 3 + 2];
+
+	return (*((int*)(dieList + (pos / 8) * 3)) >> ((7 - (pos % 8)) * 3 + 8)) & 7;
 }
 
-DieStorage::DieStorage() { size = dieArray.size() / 3; }
+DieStorage::DieStorage(int s) : dieList(new char[((s - 1) / 8) * 3 + 4]), size(s) { }
 
 DieStorage::~DieStorage()
 {
@@ -19,8 +21,8 @@ DieStorage::~DieStorage()
 }
 
 
-void DieStorage::setDieResult(int pos, int result)
-{
+void DieStorage::setDieResult(int pos, int result){
+
 	if (pos > size || pos < 0) {
 		std::cout << "setDieResult: Target not in bounds" << "\n";
 		return;
@@ -30,9 +32,7 @@ void DieStorage::setDieResult(int pos, int result)
 		return;
 	}
 
-	result / 4 ? dieArray.set(pos * 3) : dieArray.reset(pos * 3);
-	((result + 2 ) % 4) < 2 ? dieArray.set(pos * 3 + 1) : dieArray.reset(pos * 3 + 1);
-	result % 2 ? dieArray.set(pos * 3 + 2) : dieArray.reset(pos * 3 + 2);
+	(*((int*)(dieList + (pos / 8) * 3)) &= ~((7 - result) << 8 + (7 - pos % 8) * 3)) |= (result << 8 + (7 - pos % 8) * 3);
 }
 
 int DieStorage::getSize(){ return size; }

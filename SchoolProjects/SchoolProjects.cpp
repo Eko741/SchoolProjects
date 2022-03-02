@@ -3,6 +3,7 @@
 #include <string>
 #include "Point2D.h"
 #include "Point3D.h"
+#include "Point3DList.h"
 using namespace std;
 unsigned long long fibonacciSequence(unsigned long long n) { return n < 2 ? n : fibonacciSequence(n - 1) + fibonacciSequence(n - 2); }
 bool isAAPalindrome(int* start, int* end) { return start > end ? true : *start == *end ? isAAPalindrome(start + 1, end - 1) : false; }
@@ -11,6 +12,13 @@ unsigned long long getNumInput();
 
 int main()
 {	
+	Point3DList list;
+	list.addPoint((0, 0, 0));
+	Point3D a(1, 1, 1), b(2, 2, 2);
+	list.addPoint(a);
+	list.addPoint(b);
+	cout << distance(list.getPoint(0), list.getPoint(1)) << "  " << distance(list.getPoint(1), list.getPoint(2)) << "  " << distance(list.getPoint(0), list.getPoint(2));
+	
 	return 0;
 }
 

@@ -14,8 +14,6 @@ public:
 	void Y(double a) { y = a; }
 	void Z(double a) { z = a; }
 
-
-	double distance(Point3D a);
 	friend const double distance(const Point3D & a, const Point3D & b);
 	const Point3D& operator+(const Point3D& op) const;
 };

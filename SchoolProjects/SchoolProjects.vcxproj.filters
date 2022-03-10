@@ -30,6 +30,15 @@
     <ClCompile Include="Point3DList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Fordon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Traktor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cykel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitset.h">
@@ -41,10 +50,16 @@
     <ClInclude Include="Point3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PointList.h">
+    <ClInclude Include="Point3DList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Point3DList.h">
+    <ClInclude Include="Fordon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cykel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Traktor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

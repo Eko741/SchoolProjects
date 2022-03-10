@@ -1,6 +1,7 @@
 #pragma once
 #pragma once
 #include "Point3D.h"
+#include <iostream>
 
 class Point3DL {
 public:
@@ -12,11 +13,21 @@ public:
 };
 
 class Point3DList {
-private:
-	int length = 0;
-	Point3DL* start;
 public:
+	Point3DList() { numberOfLists++; }
+	~Point3DList() { numberOfLists--; }
 	void addPoint(const Point3D& point);
 	void removePoint(const int point);
 	Point3D& getPoint(const int point) const;
+
+	const static int getNumberOfLists() {
+		return numberOfLists;
+	}
+
+	std::ostream * operator>>(std::ostream * cout)const;
+
+private:
+	int length = 0;
+	Point3DL* start;
+	static int numberOfLists;
 };

@@ -139,18 +139,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cykel.cpp" />
+    <ClCompile Include="Fordon.cpp" />
     <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Point3D.cpp" />
     <ClCompile Include="Point3DList.cpp" />
     <ClCompile Include="SchoolProjects.cpp" />
     <ClCompile Include="Bitset.cpp" />
+    <ClCompile Include="Traktor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitset.h" />
+    <ClInclude Include="Cykel.h" />
+    <ClInclude Include="Fordon.h" />
     <ClInclude Include="Point2D.h" />
     <ClInclude Include="Point3D.h" />
     <ClInclude Include="Point3DList.h" />
-    <ClInclude Include="PointList.h" />
+    <ClInclude Include="Traktor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

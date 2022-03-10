@@ -12,12 +12,8 @@ unsigned long long getNumInput();
 
 int main()
 {	
-	Point3DList list;
-	list.addPoint((0, 0, 0));
-	Point3D a(1, 1, 1), b(2, 2, 2);
-	list.addPoint(a);
-	list.addPoint(b);
-	cout << distance(list.getPoint(0), list.getPoint(1)) << "  " << distance(list.getPoint(1), list.getPoint(2)) << "  " << distance(list.getPoint(0), list.getPoint(2));
+
+
 	
 	return 0;
 }

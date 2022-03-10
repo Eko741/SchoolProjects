@@ -16,4 +16,9 @@ public:
 
 	friend const double distance(const Point3D & a, const Point3D & b);
 	const Point3D& operator+(const Point3D& op) const;
+	Point3D& operator++();
+	Point3D& operator--();
+	Point3D operator++(int);
+	Point3D operator--(int);
+
 };

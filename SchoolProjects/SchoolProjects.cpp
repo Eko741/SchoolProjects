@@ -1,5 +1,5 @@
 #include <iostream>
-#include "dieStorage.h"
+#include "Bitset.h"
 #include <chrono>
 #include <string>
 #include "Point2D.h"
@@ -10,11 +10,13 @@ bool isAAPalindrome(int* start, int* end) { return start > end ? true : *start =
 bool isPalindrome(int* s, int* e) { return s >= e || *s == *e && isPalindrome(++s, --e); }
 unsigned long long getNumInput();
 
+
 int main()
-{
+{	
+	Point3D a = Point3D(2, 2, 2);
+	Point3D b = Point3D(1, 1, 1);
+	cout << a.distance(b) << endl;
 	
-	const char c[5] ={'A', 'B', 'C', 'B', 'A'};
-	cout << isPalindrome((int *)c, (int *)c + 4);
 }
 
 unsigned long long getNumInput() {

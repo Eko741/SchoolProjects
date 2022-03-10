@@ -18,7 +18,7 @@
     <ClCompile Include="SchoolProjects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dieStorage.cpp">
+    <ClCompile Include="Bitset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Point2D.cpp">
@@ -29,7 +29,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dieStorage.h">
+    <ClInclude Include="Bitset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Point2D.h">

@@ -140,22 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Point2D.cpp" />
-    <ClCompile Include="Point3D.cpp">
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AssemblyCode</AssemblerOutput>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AssemblyCode</AssemblerOutput>
-    </ClCompile>
-    <ClCompile Include="SchoolProjects.cpp">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AssemblyCode</AssemblerOutput>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AssemblyCode</AssemblerOutput>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AssemblyCode</AssemblerOutput>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AssemblyCode</AssemblerOutput>
-    </ClCompile>
-    <ClCompile Include="dieStorage.cpp" />
+    <ClCompile Include="Point3D.cpp" />
+    <ClCompile Include="SchoolProjects.cpp" />
+    <ClCompile Include="Bitset.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dieStorage.h" />
+    <ClInclude Include="Bitset.h" />
     <ClInclude Include="Point2D.h" />
     <ClInclude Include="Point3D.h" />
   </ItemGroup>

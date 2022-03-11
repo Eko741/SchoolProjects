@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cykel.cpp" />
-    <ClCompile Include="Fordon.cpp" />
+    <ClCompile Include="Fordons.h" />
     <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Point3D.cpp" />
     <ClCompile Include="Point3DList.cpp" />
@@ -152,6 +152,7 @@
     <ClInclude Include="Bitset.h" />
     <ClInclude Include="Cykel.h" />
     <ClInclude Include="Fordon.h" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="Point2D.h" />
     <ClInclude Include="Point3D.h" />
     <ClInclude Include="Point3DList.h" />

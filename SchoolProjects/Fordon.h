@@ -19,6 +19,8 @@ public:
 	void Consumtion(int c) { consumption = c; }
 	void NumOfWheels(int n) { n = numOfWheels; }
 
+	virtual bool Move(unsigned int distance) = 0;
+
 protected:
 	double consumption; // Liters per kilometer
 	int red, green, blue;

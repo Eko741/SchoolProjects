@@ -25,6 +25,8 @@ public:
 	}
 
 	std::ostream * operator>>(std::ostream * cout)const;
+	Point3D& operator[](const unsigned int point);
+	
 
 private:
 	int length = 0;

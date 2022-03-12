@@ -12,8 +12,9 @@ unsigned long long getNumInput();
 
 int main()
 {	
-
-
+	Point3DList list;
+	list.addPoint(Point3D(1, 1, 1));
+	cout << list[0].X() << list[0].Y() << list[0].Z();
 	
 	return 0;
 }

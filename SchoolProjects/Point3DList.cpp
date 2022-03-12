@@ -43,6 +43,15 @@ Point3D& Point3DList::getPoint(const int point) const
 	return current->data;
 }
 
+Point3D& Point3DList::operator[](const unsigned int point) {
+	/*if (point > length - 1) 
+		return Point3D(0 , 0, 0);*/
+	Point3DL* current = start;
+	for (int i = 0; i < point; i++)
+		current = current->next;
+	return current->data;
+}
+
 std::ostream * Point3DList::operator>>(std::ostream * cout) const
 {
 	Point3DL* current = start;

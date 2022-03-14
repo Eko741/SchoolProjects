@@ -139,23 +139,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Cykel.cpp" />
+    <ClCompile Include="Figure2D.cpp" />
     <ClCompile Include="Fordons.h" />
     <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Point3D.cpp" />
     <ClCompile Include="Point3DList.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="SchoolProjects.cpp" />
     <ClCompile Include="Bitset.cpp" />
     <ClCompile Include="Traktor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bitset.h" />
+    <ClInclude Include="Circle.h" />
     <ClInclude Include="Cykel.h" />
+    <ClInclude Include="Figure2D.h" />
     <ClInclude Include="Fordon.h" />
-    <ClInclude Include="Header.h" />
     <ClInclude Include="Point2D.h" />
     <ClInclude Include="Point3D.h" />
     <ClInclude Include="Point3DList.h" />
+    <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Traktor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -7,10 +7,12 @@ public:
 private:
 	double x, y;
 public:
-	double X() { return x; }
-	double Y() { return y; }
+	double X() const { return x; }
+	double Y() const { return y; }
 	void X(double a) { x = a; }
 	void Y(double a) { y = a; }
 	const Point2D & operator+(const Point2D& b) const;
 	const Point2D& operator-() const;
+
+	
 };

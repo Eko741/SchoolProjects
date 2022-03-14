@@ -20,5 +20,6 @@ public:
 	Point3D& operator--();
 	Point3D operator++(int);
 	Point3D operator--(int);
+	operator Point2D()const;
 
 };

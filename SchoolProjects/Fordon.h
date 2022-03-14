@@ -18,9 +18,9 @@ public:
 	void Weight(int w) { weight = w; }
 	void Consumtion(int c) { consumption = c; }
 	void NumOfWheels(int n) { n = numOfWheels; }
-	virtual bool move(int distance) = 0;
 
-	virtual bool Move(unsigned int distance) = 0;
+	virtual bool move(unsigned int distance) = 0;
+	virtual int Passagerare() = 0;
 
 protected:
 	

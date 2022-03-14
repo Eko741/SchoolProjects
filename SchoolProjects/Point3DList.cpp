@@ -62,3 +62,18 @@ std::ostream * Point3DList::operator>>(std::ostream * cout) const
 	return cout;
 }
 
+bool Point3DList::get2DFLData(std::string fileName)
+{
+	std::ifstream file(fileName, std::ios::binary);
+	if (!file.is_open())
+		return false;
+
+	int length = 0;
+	file.read((char*)&length, 4);
+	double* data = new double[length];
+	file.read(((char*)data), (unsigned long)length * 8);
+	for (int i = 0; i < length; i++)
+		addPoint(Point3D(i, data[i], 0));
+	return true;
+}
+

@@ -1,6 +1,6 @@
 #include "Traktor.h"
 
-bool Traktor::move(int distance)
+bool Traktor::move(unsigned int distance)
 {
     blue--;
     green--;

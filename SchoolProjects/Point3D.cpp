@@ -41,3 +41,7 @@ Point3D Point3D::operator--(int) {
 	z -= 1;
 	return tmp;
 }
+Point3D::operator Point2D() const
+{
+	return Point2D(x, y);
+}

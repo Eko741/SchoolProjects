@@ -142,6 +142,7 @@
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Cykel.cpp" />
     <ClCompile Include="Figure2D.cpp" />
+    <ClCompile Include="FlightLogData.h" />
     <ClCompile Include="Fordons.h" />
     <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Point3D.cpp" />

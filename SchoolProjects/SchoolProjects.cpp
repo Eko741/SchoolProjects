@@ -9,6 +9,7 @@
 #include "Rectangle.h"
 #include "Circle.h"
 #include "Figure2D.h"
+
 using namespace std;
 unsigned long long fibonacciSequence(unsigned long long n) { return n < 2 ? n : fibonacciSequence(n - 1) + fibonacciSequence(n - 2); }
 bool isAAPalindrome(int* start, int* end) { return start > end ? true : *start == *end ? isAAPalindrome(start + 1, end - 1) : false; }
@@ -17,20 +18,7 @@ unsigned long long getNumInput();
 
 int main()
 {	 
-	/*Figure2D* figures[4];
-	figures[0] = new Circle(0, 0, 1, 0);
-	figures[1] = new Circle(0, 0, 1, 1);
-	figures[2] = new Rectangle(0, 0, 1, 1);
-	figures[3] = new Rectangle(0, 0, 2, 2);
 
-	for (int i = 0; i < 4; i++)
-		cout << figures[i]->area() << endl;
-	*/
-
-	Point3DList list;
-	if (!list.get2DFLData("binData.FL"))
-		cout << "fuck";
-	list >> &cout;
 
 	return 0;
 }

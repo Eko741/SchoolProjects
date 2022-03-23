@@ -9,6 +9,7 @@
 #include "Rectangle.h"
 #include "Circle.h"
 #include "Figure2D.h"
+
 using namespace std;
 unsigned long long fibonacciSequence(unsigned long long n) { return n < 2 ? n : fibonacciSequence(n - 1) + fibonacciSequence(n - 2); }
 bool isAAPalindrome(int* start, int* end) { return start > end ? true : *start == *end ? isAAPalindrome(start + 1, end - 1) : false; }

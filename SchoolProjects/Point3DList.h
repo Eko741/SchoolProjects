@@ -3,7 +3,6 @@
 #include "Point3D.h"
 #include <iostream>
 #include <fstream>
-
 class Point3DL {
 public:
 	Point3DL(const Point3D& d) : data(d) {}

@@ -1,5 +1,6 @@
 #pragma once
 #include "Point3DList.h"
+#include "FlightLogData.h"
 int Point3DList::numberOfLists = 0;
 
 void Point3DList::addPoint(const Point3D& point)
@@ -68,12 +69,11 @@ bool Point3DList::get2DFLData(std::string fileName)
 	if (!file.is_open())
 		return false;
 
-	int length = 0;
 	file.read((char*)&length, 4);
-	double* data = new double[length];
-	file.read(((char*)data), (unsigned long)length * 8);
+	FlightLogData* FLD = new FlightLogData[length];
+	file.read(((char*)FLD), (unsigned long)length * 40);
 	for (int i = 0; i < length; i++)
-		addPoint(Point3D(i, data[i], 0));
+		addPoint(Point3D(i, FLD[i].failRate, 0));
 	return true;
 }
 

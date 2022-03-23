@@ -13,6 +13,6 @@ public:
 	void Y(double a) { y = a; }
 	const Point2D & operator+(const Point2D& b) const;
 	const Point2D& operator-() const;
-
+	friend const double distance(const Point2D& a, const Point2D& b);
 	
 };
